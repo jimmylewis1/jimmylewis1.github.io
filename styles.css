@@ -1,3 +1,9 @@
+.page-header {
+    padding-bottom: 0px;
+    margin: 5px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
 .picture {
     display: flex;
     justify-content: center;
@@ -15,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .fa {
