@@ -105,7 +105,45 @@ a:active {
     margin: 0 auto;
 }
 
+/*HOBBIES.HTML*/
 
 
+/*WEB-DEV.HTML*/
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 10% 0 10%;
+}
+
+.weave {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#weave-logo {
+    display: flex;
+    background: #d3d3d3;
+    height: auto;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.resume-p {
+    padding: 10px 0 0 25px;
+}
+
+.dev-mountain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
 
 
+#devmtn {
+    display: flex;
+    height: auto;
+    width: 200px;
+}
