@@ -6,6 +6,10 @@
     border-bottom: 1px solid #eee;
 }
 
+.navbar-brand {
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
 .picture {
     display: flex;
     justify-content: center;
@@ -83,5 +87,28 @@ a:active {
 }
 
 /*ABOUT-ME.HTML*/
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 200px;  
+    margin-left: 10px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
