@@ -99,16 +99,13 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 200px;  
-    margin-left: 10px;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 
