@@ -147,3 +147,38 @@ a:active {
     height: auto;
     width: 200px;
 }
+
+/*WORK-HISTORY.HTML*/
+
+.weave-onboarding, .byui, .city-hend {
+    display: flex;
+    flex-direction: row;
+/*    padding-top: 50px;*/
+}
+
+.byui {
+    padding-top: 40px;
+}
+
+.byui .resume-p {
+    padding-top: 50px;
+}
+
+#byui {
+    width: 200px;
+    height: auto;
+}
+
+#henderson {
+    display: flex;
+    width: 200px;
+    height: auto;
+}
+
+.city-hend {
+    padding-top: 20px;
+}
+
+.city-hend .resume-p {
+    padding-top: 60px;
+}
