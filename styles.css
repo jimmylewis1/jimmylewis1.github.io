@@ -13,7 +13,7 @@
 
 
 
-@media (max-width: 760px) {
+@media (max-width: 750px) {
     .page-header {
         display: none;
     }
@@ -107,7 +107,7 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 750px;
+    max-width: 760px;
     padding: 8px;
     height: 200px;
     text-align: center;
@@ -140,7 +140,7 @@ a:active {
     align-items: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 750px) {
     .weave, .dev-mountain {
         justify-content: center;
         align-items: center;
