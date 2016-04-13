@@ -11,14 +11,6 @@
     font-family: 'Shadows Into Light Two', cursive;
 }
 
-
-
-@media (max-width: 750px) {
-    .page-header {
-        display: none;
-    }
-}
-
 .picture {
     display: flex;
     justify-content: center;
@@ -140,15 +132,6 @@ a:active {
     align-items: center;
 }
 
-@media (max-width: 750px) {
-    .weave, .dev-mountain {
-        justify-content: center;
-        align-items: center;
-    }
-    .resume-p {
-        padding-top: 8px;
-    }
-}
 
 /*.weave-logo-container {*/
     /*height: 70px;*/
@@ -237,4 +220,26 @@ a:active {
 
 .city-hend .resume-p {
     padding-top: 60px;
+}
+
+@media only screen and (min-width: 751px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .navbar-right {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .weave, .dev-mountain {
+        justify-content: center;
+        align-items: center;
+    }
+    .resume-p {
+        padding-top: 8px;
+    }
 }
