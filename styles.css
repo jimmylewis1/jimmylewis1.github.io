@@ -1,5 +1,6 @@
 /*INDEX.HTML*/
 
+/*Default Header*/
 .page-header {
     padding-bottom: 0px;
     margin: 5px 0 20px;
@@ -8,6 +9,14 @@
 
 .navbar-brand {
     font-family: 'Shadows Into Light Two', cursive;
+}
+
+
+
+@media (max-width: 760px) {
+    .page-header {
+        display: none;
+    }
 }
 
 .picture {
@@ -38,7 +47,7 @@ a {
     color: black;
 }
 
-a:link, a:visted, {
+a:link, a:visted {
     text-decoration: none;
     color: black;
 }
@@ -57,7 +66,6 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%
 }
 
 .name {
@@ -81,7 +89,7 @@ a:active {
 .quote {
     font-family: sans-serif;
     font-size: 10px;
-    position: fixed;
+    position: relative;
     padding-left: 3px;
     bottom: 0;
 }
@@ -99,10 +107,18 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    max-width: 760px;
+    padding: 8px;
     height: 200px;
     text-align: center;
     margin: 0 auto;
+}
+
+.sj-quote, .disney-quote, .rumi-quote {
+    font-size: 10px;
+    padding-left: 3px;
+    position: absolute;
+    bottom: 0;
 }
 
 /*HOBBIES.HTML*/
@@ -119,50 +135,88 @@ a:active {
 
 .weave {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+@media (max-width: 760px) {
+    .weave, .dev-mountain {
+        justify-content: center;
+        align-items: center;
+    }
+    .resume-p {
+        padding-top: 8px;
+    }
+}
+
+/*.weave-logo-container {*/
+    /*height: 70px;*/
+    /*width: 210px;*/
+    /*background: #27ace3;*/
+    /*border-radius: 3px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
 
 #weave-logo {
     display: flex;
-    background: #27ace3;
     height: auto;
     width: 200px;
-    border-radius: 5px;
 }
 
-.resume-p {
-    padding: 5px 0 0 25px;
+.resume-p-weave, .resume-p-byui, .resume-p-devmtn,
+.resume-p-hend{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.resume-p-weave, .resume-p-devmtn, .resume-p-hend {
+    padding-top: 8px;
+}
+
+.resume-p-byui {
+    margin-top: -20px;
+}
+
+.strong-label {
+    font-weight: 800;
 }
 
 .dev-mountain {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 50px;
 }
-
 
 #devmtn {
     display: flex;
     height: auto;
-    width: 200px;
+    width: 260px;
 }
 
 /*WORK-HISTORY.HTML*/
 
 .weave-onboarding, .byui, .city-hend {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 /*    padding-top: 50px;*/
 }
 
-.byui {
-    padding-top: 40px;
+.weave-onboarding, .byui, .city-hend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.byui .resume-p {
-    padding-top: 50px;
+.byui {
+    padding-top: 5px;
 }
 
 #byui {
@@ -174,10 +228,11 @@ a:active {
     display: flex;
     width: 200px;
     height: auto;
+    margin-top: 30px;
 }
 
 .city-hend {
-    padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .city-hend .resume-p {
