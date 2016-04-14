@@ -12,10 +12,13 @@
 }
 
 .picture {
+    background: url("images/picture-2.jpg") 50% 50% no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8%;
+    margin-top: 3%;
+    height: 400px;
 }
 
 .profile-pic{ 
@@ -81,7 +84,7 @@ a:active {
 .quote {
     font-family: sans-serif;
     font-size: 10px;
-    position: relative;
+    position: absolute;
     padding-left: 3px;
     bottom: 0;
 }
@@ -89,10 +92,20 @@ a:active {
 /*ABOUT-ME.HTML*/
 
 .main-container {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    margin-top: 5%;
+}
+
+.family-picture {
+    background: url("images/family-picture.jpg") 50% 50% no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8%;
+    margin-top: 3%;
+    height: 350px;
 }
 
 #description {
@@ -221,10 +234,94 @@ a:active {
     padding-top: 60px;
 }
 
-@media (max-width: 750px) {
+/*iPhone 6*/
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2){
+
+    .navbar {
+        margin-bottom: 0px !important;
+    }
+    .navbar-toggle {
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+    }
+
+    .icon-bar {
+        width: 29px !important;
+        height: 3px !important;
+    }
+
+    .name {
+        font-size: 30px;
+        width: 153px;
+        margin-bottom: 5%;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+
+    .fa {
+        font-size: 25px;
+        padding: 20px;
+    }
+
     .page-header {
         display: none;
     }
+
+    .navbar-brand {
+        font-size: 35px;
+        margin: 24px 0;
+    }
+
+    .picture, .family-picture {
+        background-size: cover;
+        margin-top: 18%;
+        height: 250px;
+    }
+
+    .description {
+        margin-top: 15%;
+        font-size: 17px;
+    }
+
+    .byui {
+        padding-top: 0px;
+        margin-top: -15px;
+    }
+
+    #weave-logo, #byui, #henderson {
+        width: 175px;
+    }
+
+    .city-hend {
+        margin-top: -15px;
+    }
+
+    .resume-container {
+        padding: 5% 10% 0 10%;
+    }
+
+    .resume-p-weave {
+        padding-top: 8%;
+    }
+
+    .resume-p-byui, .resume-p-weave, .resume-p-hend {
+        font-size: 11px;
+    }
+
+    .resume-p-hend {
+        padding-top: 8%;
+    }
+
+    .rumi-quote, .sj-quote, .quote {
+        font-size: 10px;
+    }
+
 }
 
 @media (max-width: 750px) {
