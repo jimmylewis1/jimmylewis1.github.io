@@ -84,7 +84,6 @@ a:active {
 .quote {
     font-family: sans-serif;
     font-size: 10px;
-    position: absolute;
     padding-left: 3px;
     bottom: 0;
 }
