@@ -6,11 +6,12 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -54,13 +55,44 @@
   <input class="poke-search" type="text" placeholder="Find a Pokémon...">
   <div class="search-button">Search</div>
 </div>
-
+<div class="poke-slider">
+  <div class="slider-pikachu">
+    <img src="https://s3.amazonaws.com/pokemontcg/base6/86.jpg">
+  </div>
+  <div class="slider-blastoise">
+    <img src="https://s3.amazonaws.com/pokemontcg/base1/2.jpg">
+  </div>
+  <div class="slider-mew">
+    <img src="https://s3.amazonaws.com/pokemontcg/ex12/10.png">
+  </div>
+  <div class="slider-eevee">
+    <img src="https://s3.amazonaws.com/pokemontcg/base6/74.jpg">
+  </div>
+  <div class="slider-electabuzz">
+    <img src="https://s3.amazonaws.com/pokemontcg/base1/20.jpg">
+  </div>
+</div>
 
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="js/app.js"></script>
 <script src="js/mainCtrl.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.poke-slider').slick({
+      centerMode: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      focusOnSelect: true
+    });
+  });
+</script>
+
 
 </body>
 </html>
