@@ -233,6 +233,34 @@ a:active {
     padding-top: 60px;
 }
 
+/*Pokemon Page*/
+
+.title-logo, .poke-search-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.title-logo > img {
+  width: 350px;
+}
+
+.poke-search-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.search-button {
+  background-color: grey;
+  font-size: 13px;
+  width: 50px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/*Media Queries*/
+
 /*iPhone 6*/
 @media only screen
     and (min-device-width: 375px)
@@ -323,7 +351,8 @@ a:active {
 
 }
 
-@media (max-width: 750px) {
+@media only screen and (max-width: 767px) {
+
     .weave, .dev-mountain {
         justify-content: center;
         align-items: center;
