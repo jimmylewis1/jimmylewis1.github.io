@@ -17,7 +17,7 @@
 
 
 </head>
-<body>
+<body ng-controller="mainCtrl">
 
 <!--Begin Header-->
 <nav class="navbar navbar-default" role="navigation">
@@ -45,6 +45,8 @@
           </ul>
         </li>
       </ul>
+    </div>
+  </div>
 </nav>
 <!--End Header-->
 
@@ -55,6 +57,7 @@
   <input class="poke-search" ng-model="search" type="text" placeholder="Find a Pokémon...">
   <div class="search-button" ng-click="searchInit()">Search</div>
 </div>
+{{test}}
 <div class="poke-slider">
   <div class="slider-pikachu">
     <img src="https://s3.amazonaws.com/pokemontcg/base6/86.jpg">
@@ -76,8 +79,10 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 <script src="js/app.js"></script>
 <script src="js/mainCtrl.js"></script>
+<script src="js/mainService.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
