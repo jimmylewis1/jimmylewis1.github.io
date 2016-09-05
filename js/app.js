@@ -1,4 +1,4 @@
-var app = angular.module('pokemon', ['ui.router']);
+var app = angular.module('pokemon', ['ui.router', 'ngMaterial']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
 

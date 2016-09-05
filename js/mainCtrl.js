@@ -11,4 +11,7 @@ app.controller('mainCtrl', function($scope) {
   // $scope.test = "Yo yo yo";
   // $scope.searchInit = function () {
   // }
+  $scope.viewPokemon = function() {
+
+  }
 });

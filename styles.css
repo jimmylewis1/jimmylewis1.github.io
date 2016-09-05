@@ -7,10 +7,6 @@
     border-bottom: 1px solid #eee;
 }
 
-.navbar-brand {
-    font-family: 'Shadows Into Light Two', cursive;
-}
-
 .picture {
     background: url("images/picture-2.jpg") 50% 50% no-repeat;
     background-size: contain;
@@ -18,7 +14,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 3%;
-    height: 400px;
+    height: 300px;
 }
 
 .profile-pic{ 
@@ -27,11 +23,16 @@
     border-radius: 20px;
 }
 
-#name {
+.name {
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: 0 auto;
     padding-top: 15px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    width: 128px;
+    height: 30px;
 }
 
 .fa {
@@ -63,22 +64,11 @@ a:active {
     align-items: center;
 }
 
-.name {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 23px;
-    font-weight: 300;
-    width: 120px;
-    height: 30px;
-}
-
-#slogan {
+.slogan {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.slogan {
-    font-family: 'Calligraffitti', cursive; 
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 .quote {
@@ -88,13 +78,19 @@ a:active {
     bottom: 0;
 }
 
+.md-button.md-accent {
+    color: #0D47A1 !important;
+}
+
+.md-nav-bar md-nav-ink-bar {
+    color: #0D47A1 !important;
+    background: #0D47A1 !important;
+}
+
 /*ABOUT-ME.HTML*/
 
 .main-container {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    margin-top: 5%;
+    margin-top: 50px;
 }
 
 .family-picture {
@@ -103,8 +99,7 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
-    height: 350px;
+    height: 300px;
 }
 
 #description {
@@ -113,7 +108,7 @@ a:active {
     align-items: center;
     max-width: 760px;
     padding: 8px;
-    height: 200px;
+    height: 100px;
     text-align: center;
     margin: 0 auto;
 }

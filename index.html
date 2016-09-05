@@ -1,91 +1,45 @@
 <!DOCTYPE html>
-<html lang="">
+<html ng-app="mainApp">
 <head>
     <meta charset="utf-8">
     <title>Jimmy Lewis</title>
     
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">      
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 
 </head>
 
-<body>
+<body ng-controller="indexCtrl">
+    <!--Begin New Materialized Header-->
+    <md-content class="md-padding">
+      <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+        <md-nav-item md-nav-sref="home" name="home">Home</md-nav-item>
+        <md-nav-item md-nav-sref="about" name="about-me">About</md-nav-item>
+        <md-nav-item md-nav-sref="web-dev" name="web-dev">Web-Dev</md-nav-item>
+        <md-nav-item md-nav-sref="work-history" name="work-history">Work History</md-nav-item>
+      </md-nav-bar>
+    </md-content>
 
-    <!--Begin Header-->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">JL</a>
-            </div>
+    <div ui-view class="view"></div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="about-me.html">About Me</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Career<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="web-dev.html">Web-Dev</a></li>
-                            <li><a href="work-history.html">Work History</a></li>
-                        </ul>
-                    </li>
-                </ul>
-    </nav>
-    <!--End Header-->
-    
-    <div class="picture">
-        <!--<img class="profile-pic" src="images/picture-2.jpg">   -->
-    </div>
-    
-    <div id="name">
-        <p class="name">Jimmy Lewis</p>
-    </div>
-    
-    <div id="slogan">
-        
-        <p class="slogan">A personal journey to increase the good in the world.</p>
-    
-    </div>
-    
-    <div id="links">
-        <a target="_blank" href="https://github.com/jimmylewis1">
-            <i class="fa fa-github fa-lg"></i>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/jimmy-lewis-838b8665">
-            <i class="fa fa-linkedin fa-lg"></i>
-        </a>
-        <a target="_blank" href="http://themormonlife.com/">
-            <i class="fa fa-wordpress fa-lg"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/jimmy_lewis1">
-            <i class="fa fa-twitter fa-lg"></i>
-        </a>
-    </div>
-    
-    <div class="rumi-quote">
-        
-        <!--   Excerpt from 'The Guest House' by Rumi     -->
-    
-        <p><i>"Be grateful for whoever comes, because each has been sent as a guide from beyond."</i></p>
-        
-    </div>
+
+    <script src="/node_modules/angular-1.5.8/angular.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/node_modules/angular-1.5.8/angular-animate.js"></script>
+    <script src="/node_modules/angular-1.5.8/angular-aria.min.js"></script>
+    <script src="/node_modules/angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/mainApp.js"></script>
+    <script src="js/indexCtrl.js"></script>
+
     
 </body>
-    
-    
 </html>
