@@ -11,21 +11,62 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
 
 </head>
 
 <body ng-controller="indexCtrl">
-    <!--Begin New Materialized Header-->
-    <md-content class="md-padding">
-      <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-        <md-nav-item md-nav-sref="home" name="home">Home</md-nav-item>
-        <md-nav-item md-nav-sref="about" name="about-me">About</md-nav-item>
-        <md-nav-item md-nav-sref="web-dev" name="web-dev">Web-Dev</md-nav-item>
-        <md-nav-item md-nav-sref="work-history" name="work-history">Work History</md-nav-item>
-      </md-nav-bar>
-    </md-content>
+    <!--Begin Desktop Nav-->
+    <div class="nav-desktop">
+      <md-content class="md-padding">
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+          <md-nav-item md-nav-sref="home" name="home">Home</md-nav-item>
+          <md-nav-item md-nav-sref="about" name="about-me">About</md-nav-item>
+          <md-nav-item md-nav-sref="web-dev" name="web-dev">Web-Dev</md-nav-item>
+          <md-nav-item md-nav-sref="work-history" name="work-history">Work History</md-nav-item>
+        </md-nav-bar>
+      </md-content>
+    </div>
+    <!--End Desktop Nav-->
+    <!--Begin Mobile Nav-->
+    <div class="nav-mobile">
+      <md-menu>
+        <md-button aria-label="Open demo menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+          <img class="menu-button-img" src="images/icon-menu.png">
+          <!--<md-icon md-menu-origin="" md-svg-icon="call:business"></md-icon>-->
+        </md-button>
+        <md-menu-content width="4">
+          <md-menu-item>
+            <md-button ui-sref="home">
+              <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+              <img class="home-button-img" src="/images/icon-globe.png">
+              Home
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ui-sref="about">
+              <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+              <img class="about-button-img" src="/images/icon-about.png">
+              About
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ui-sref="web-dev">
+              <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+              <img class="web-dev-button-img" src="/images/icon-desktop.png">
+              Web-Dev
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button ui-sref="work-history">
+              <!--<md-icon md-menu-align-target="" md-svg-icon="call:no-sim"></md-icon>-->
+              <img class="work-history-button-img" src="/images/icon-paper.png">
+              Work-History
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+    <!--End Mobile Nav-->
 
     <div ui-view class="view"></div>
 
