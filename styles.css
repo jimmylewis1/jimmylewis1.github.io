@@ -276,12 +276,31 @@ md-menu-item > .md-button > span {
 
 /*Media Queries*/
 
-/*iPhone 6*/
-@media screen and (max-width: 375px){
+@media (max-width: 767px) {
 
-  body {
-    background-color: blue;
+  .nav-desktop {
+    display: none !important;
   }
+
+  .nav-mobile {
+    display: flex !important;
+  }
+
+  .weave, .dev-mountain {
+    justify-content: center;
+    align-items: center;
+  }
+  .resume-p {
+    padding-top: 8px;
+  }
+}
+
+/*iPhone 6*/
+@media (max-width: 375px){
+
+    body {
+      background-color: blue;
+    }
 
     .nav-desktop {
       display: none !important;
@@ -373,24 +392,5 @@ md-menu-item > .md-button > span {
     .rumi-quote, .sj-quote, .quote {
         font-size: 10px;
     }
-
 }
 
-@media only screen and (max-width: 767px) {
-
-    .nav-desktop {
-      display: none;
-    }
-
-    .nav-mobile {
-      display: flex;
-    }
-
-    .weave, .dev-mountain {
-        justify-content: center;
-        align-items: center;
-    }
-    .resume-p {
-        padding-top: 8px;
-    }
-}
