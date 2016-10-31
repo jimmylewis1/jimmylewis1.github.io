@@ -85,6 +85,10 @@ a:active {
     background: #0D47A1 !important;
 }
 
+.md-nav-item > a:hover {
+    background-color: #ECECEC !important;
+}
+
 .menu-button-img, .home-button-img,
 .about-button-img, .web-dev-button-img,
 .work-history-button-img {
